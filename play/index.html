@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guessyroo — Picture charades for kids & family</title>
+  <meta name="description" content="Little kids can join the guessing game before they can read. Play Guessyroo on iPhone and iPad. Animals and Food are free. No ads, accounts, or subscriptions.">
+  <meta name="theme-color" content="#fff7e8">
+  <meta property="og:title" content="Little pictures. Big family laughs.">
+  <meta property="og:description" content="Picture charades for kids & family. Animals and Food are free in Guessyroo for iPhone and iPad.">
+  <meta property="og:image" content="https://jjayp4rk.github.io/guessyroo-legal/play/assets/dog.webp">
+  <meta property="og:url" content="https://jjayp4rk.github.io/guessyroo-legal/play/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://jjayp4rk.github.io/guessyroo-legal/play/">
+  <link rel="icon" href="assets/icon.webp">
+  <style>
+    :root { color-scheme: light; --ink:#28234d; --paper:#fff7e8; --purple:#5b36a7; --yellow:#ffcc55; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:ui-rounded,"Avenir Next",Avenir,system-ui,sans-serif; font-size:18px; line-height:1.55; }
+    a { color:inherit; text-underline-offset:4px; }
+    a:focus-visible { outline:3px solid #007263; outline-offset:6px; }
+    .wrap { width:min(1120px,calc(100% - 48px)); margin:auto; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:24px 0; gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; font-size:25px; font-weight:850; text-decoration:none; }
+    .brand img { border-radius:13px; }
+    nav>a:last-child { font-size:15px; font-weight:650; }
+    .hero { display:grid; grid-template-columns:1.12fr 1fr; align-items:center; gap:60px; padding:62px 0 90px; }
+    .eyebrow { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:1.8px; }
+    h1 { font-size:clamp(46px,6.1vw,74px); line-height:1.03; letter-spacing:-3px; margin:24px 0; font-weight:900; }
+    h1 em { color:var(--purple); font-style:normal; }
+    .intro { font-size:21px; max-width:460px; }
+    .download { display:inline-flex; align-items:center; gap:14px; background:var(--ink); color:white; padding:14px 23px; border-radius:15px; text-decoration:none; line-height:1.2; margin:18px 0 8px; box-shadow:0 5px 0 #d6bda5; }
+    .download small { display:block; font-size:12px; margin-bottom:3px; }
+    .download strong { font-size:22px; }
+    .download svg { width:27px; height:34px; fill:currentColor; }
+    .fine { font-size:14px; }
+    .cards { position:relative; padding:0 20px 36px; }
+    .big-card { margin:0; padding:17px 17px 22px; background:white; border:2px solid var(--ink); border-radius:28px; transform:rotate(5deg); box-shadow:10px 13px 0 #efbfa1; }
+    .big-card img { display:block; width:100%; height:auto; object-fit:contain; border-radius:15px; }
+    .big-card figcaption { font-size:28px; text-align:center; font-weight:850; padding-top:12px; }
+    .sticker { position:absolute; bottom:0; left:-12px; background:var(--yellow); padding:15px 22px; border:2px solid var(--ink); border-radius:50%; font-size:18px; font-weight:850; transform:rotate(-10deg); line-height:1.3; text-align:center; }
+    .promise { background:var(--purple); color:white; padding:19px 24px; text-align:center; font-size:16px; font-weight:750; }
+    section { padding:82px 0; }
+    h2 { font-size:clamp(32px,4vw,48px); letter-spacing:-1.5px; line-height:1.15; margin:0 0 26px; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:36px; margin:38px 0 0; padding:0; list-style:none; }
+    .number { display:grid; place-items:center; width:45px; height:45px; background:var(--yellow); border-radius:50%; font-weight:850; border:1.5px solid var(--ink); }
+    h3 { font-size:24px; line-height:1.2; margin:19px 0 12px; }
+    .steps p { margin:0; }
+    .playground { border-top:2px solid #e4d7c7; display:grid; grid-template-columns:1fr 1.1fr; gap:75px; align-items:center; }
+    .pair { display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:center; }
+    .small-card { background:white; padding:12px; border-radius:20px; border:1.5px solid var(--ink); margin:0; transform:rotate(-7deg); }
+    .small-card:last-child { transform:rotate(7deg); margin-top:70px; }
+    .small-card img { display:block; width:100%; height:auto; border-radius:10px; }
+    .small-card figcaption { font-weight:800; text-align:center; padding:12px 0 2px; }
+    .callout { background:#f8df97; padding:64px 30px; border-radius:30px; text-align:center; margin-bottom:72px; }
+    .callout p { max-width:680px; margin:0 auto 18px; }
+    footer { border-top:1px solid #dfd1be; padding:26px 0 35px; font-size:14px; display:flex; gap:20px; justify-content:space-between; flex-wrap:wrap; }
+    footer div { display:flex; gap:22px; }
+    @media(max-width:700px) {
+      .wrap { width:calc(100% - 36px); } nav { padding:18px 0; } .brand { font-size:22px; }
+      .hero { grid-template-columns:1fr; padding:32px 0 60px; gap:40px; }
+      h1 { letter-spacing:-2px; max-width:530px; } .intro { font-size:19px; }
+      .cards { width:min(370px,100% - 16px); margin:auto; }
+      .steps { grid-template-columns:1fr; gap:28px; } .steps li { padding-left:65px; position:relative; } .number { position:absolute; left:0; top:0; } h3 { margin-top:0; }
+      section { padding:55px 0; } .playground { grid-template-columns:1fr; gap:40px; } .pair { max-width:400px; margin:auto; } .callout { padding:40px 22px; margin-bottom:48px; }
+    }
+    @media(prefers-reduced-motion:no-preference) { .download { transition:transform .15s; } .download:hover { transform:translateY(-3px); } }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Guessyroo","applicationCategory":"GameApplication","operatingSystem":"iOS 17.0 or later, iPadOS 17.0 or later","url":"https://apps.apple.com/app/id6787439833","description":"Picture guessing and charades for kids and families. Animals, Food, and custom word decks are free. Optional one-time full unlock.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+</head>
+<body>
+  <header class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="./"><img src="assets/icon.webp" alt="" width="43" height="43">Guessyroo</a>
+      <a href="#how-to-play">How to play</a>
+    </nav>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Picture charades for kids & family</div>
+        <h1>Little pictures.<br><em>Big family laughs.</em></h1>
+        <p class="intro">They can join the guessing game before they can read. Pick a picture, give a clue, and see who guesses it first.</p>
+        <a class="download" href="https://apps.apple.com/app/id6787439833" aria-label="Download Guessyroo on the App Store">
+          <svg viewBox="0 0 24 30" aria-hidden="true"><path d="M17.5 0c.4 3-1.8 5.7-4.5 5.8C12.6 3 15.1.4 17.5 0ZM22 21.5c-.8 2-1.3 2.9-2.3 4.6-1.5 2.3-3.6 5.1-6.2 3.2-1.6-1.1-3.6-1.1-5.2 0-2.4 1.8-4.7-1.5-6.3-4C-1.8 19.2-.6 10.2 5.1 8c2.1-.8 3.8-.2 5.2.3 1 .4 1.7.4 2.7 0 1.9-.7 4.8-1.6 7.6 1.3-4.4 2.7-4 8.6 1.4 11.9Z"/></svg>
+          <span><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+        <p class="fine">Free for iPhone & iPad · Optional one-time unlock</p>
+      </div>
+      <div class="cards">
+        <figure class="big-card"><img src="assets/dog.webp" alt="A friendly puppy from Guessyroo's Animals deck" width="512" height="512"><figcaption>Can you act this out?</figcaption></figure>
+        <div class="sticker">No reading<br>required!</div>
+      </div>
+    </div>
+  </header>
+  <div class="promise">No ads. No accounts. No subscriptions. Just play.</div>
+  <main class="wrap">
+    <section id="how-to-play">
+      <div class="eyebrow">One phone. Everyone joins in.</div>
+      <h2 style="margin-top:16px">From “what shall we do?”<br>to “my turn!”</h2>
+      <ol class="steps">
+        <li><span class="number">1</span><h3>Pick your pictures.</h3><p>Start with Animals or Food. Both decks are free, every time you play.</p></li>
+        <li><span class="number">2</span><h3>Give clues. Get silly.</h3><p>Face the phone toward your family and guess their clues. Or take turns acting out the pictures.</p></li>
+        <li><span class="number">3</span><h3>Pass the phone.</h3><p>Score a guess, skip a tricky one, and give the next player a turn. Choose a timer or practice at your own pace.</p></li>
+      </ol>
+    </section>
+    <section class="playground">
+      <div class="pair">
+        <figure class="small-card"><img src="assets/strawberry.webp" loading="lazy" alt="Strawberry picture card" width="450" height="450"><figcaption>Give a clue</figcaption></figure>
+        <figure class="small-card"><img src="assets/hop.webp" loading="lazy" alt="A child hopping on one foot" width="450" height="450"><figcaption>Act it out</figcaption></figure>
+      </div>
+      <div>
+        <h2>A game that grows<br>with your family.</h2>
+        <p>Use pictures for little players, words for readers, or both together. Make your own free word decks for spelling lists, favorite things, or family jokes.</p>
+        <p>Want more? The optional one-time unlock opens all 13 picture decks, with 612 cards to discover.</p>
+        <p class="fine">Custom decks use words; they do not create new illustrations. Decks and progress stay on your device.</p>
+      </div>
+    </section>
+    <aside class="callout">
+      <h2>Your next family game<br>is already in your pocket.</h2>
+      <p>Try Animals and Food free. Take Guessyroo along for family nights, waiting rooms, and a little play between the big things.</p>
+      <a class="download" href="https://apps.apple.com/app/id6787439833"><strong>Get Guessyroo free →</strong></a>
+    </aside>
+  </main>
+  <footer class="wrap">
+    <span>Guessyroo · Haru Nakanam</span>
+    <div><a href="../">Privacy policy</a><a href="mailto:nakanam.haru@gmail.com?subject=Guessyroo%20support">Contact support</a></div>
+  </footer>
+</body>
+</html>
